@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "ecommerce-frontend": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application"
+    }
+  }
+}
