@@ -21,6 +21,7 @@ client/node_modules
 .env.production.local
 .env
 /ecommerce-backend/.env
+ecommerce-backend/.env
 
 npm-debug.log*
 yarn-debug.log*
