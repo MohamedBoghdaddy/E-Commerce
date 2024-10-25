@@ -1,0 +1,6 @@
+<div class="carousel">
+  <div *ngFor="let product of products" class="carousel-item">
+    <img [src]="product.image" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+  </div>
+</div>
