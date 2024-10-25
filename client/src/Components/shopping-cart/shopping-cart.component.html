@@ -1,0 +1,10 @@
+<!-- client/src/app/components/shopping-cart/shopping-cart.component.html -->
+<div class="shopping-cart">
+  <div *ngFor="let item of cartItems; let i = index">
+    <h3>{{ item.name }}</h3>
+    <p>Price: {{ item.price | currency }}</p>
+    <p>Quantity: {{ item.quantity }}</p>
+    <button mat-button color="warn" (click)="removeItem(i)">Remove</button>
+  </div>
+  <h2>Total: {{ getTotalCost() | currency }}</h2>
+</div>
