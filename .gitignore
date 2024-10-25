@@ -7,6 +7,9 @@
 node_modules
 server/node_modules
 client/node_modules
+clint/.angular
+.angular
+
 # testing
 /coverage
 
@@ -26,4 +29,3 @@ ecommerce-backend/.env
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
