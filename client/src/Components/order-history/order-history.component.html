@@ -1,0 +1,9 @@
+<!-- client/src/app/components/order-history/order-history.component.html -->
+<div class="order-history">
+  <div *ngFor="let order of orders">
+    <h3>Order #{{ order._id }}</h3>
+    <p>Date: {{ order.createdAt | date }}</p>
+    <p>Total: {{ order.totalPrice | currency }}</p>
+    <p>Status: {{ order.status }}</p>
+  </div>
+</div>
