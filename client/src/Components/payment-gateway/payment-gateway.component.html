@@ -1,0 +1,74 @@
+<div class="container mx-auto p-6">
+  <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">Payment Gateway</h2>
+
+    <form (ngSubmit)="onSubmit()" #paymentForm="ngForm">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="cardNumber">
+          Card Number
+        </label>
+        <input
+          type="text"
+          id="cardNumber"
+          name="cardNumber"
+          [(ngModel)]="cardNumber"
+          class="w-full px-3 py-2 border rounded shadow appearance-none focus:outline-none focus:ring focus:border-blue-300"
+          required
+        />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="cardHolderName">
+          Cardholder Name
+        </label>
+        <input
+          type="text"
+          id="cardHolderName"
+          name="cardHolderName"
+          [(ngModel)]="cardHolderName"
+          class="w-full px-3 py-2 border rounded shadow appearance-none focus:outline-none focus:ring focus:border-blue-300"
+          required
+        />
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-1/2 mr-2">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="expiryDate">
+            Expiry Date
+          </label>
+          <input
+            type="text"
+            id="expiryDate"
+            name="expiryDate"
+            [(ngModel)]="expiryDate"
+            class="w-full px-3 py-2 border rounded shadow appearance-none focus:outline-none focus:ring focus:border-blue-300"
+            placeholder="MM/YY"
+            required
+          />
+        </div>
+
+        <div class="w-1/2 ml-2">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="cvv">
+            CVV
+          </label>
+          <input
+            type="text"
+            id="cvv"
+            name="cvv"
+            [(ngModel)]="cvv"
+            class="w-full px-3 py-2 border rounded shadow appearance-none focus:outline-none focus:ring focus:border-blue-300"
+            required
+          />
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="!paymentForm.valid"
+        class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+      >
+        Pay Now
+      </button>
+    </form>
+  </div>
+</div>
