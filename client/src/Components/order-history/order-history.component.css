@@ -1,0 +1,10 @@
+/* Basic styles for order history component */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.order-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
