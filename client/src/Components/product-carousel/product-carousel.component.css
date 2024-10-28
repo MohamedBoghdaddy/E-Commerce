@@ -1,0 +1,14 @@
+/* Basic styles for product carousel component */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 15px;
+}
+
+.carousel-item {
+  min-width: 150px;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
