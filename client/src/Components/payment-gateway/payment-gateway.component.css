@@ -1,0 +1,13 @@
+/* payment-gateway.component.css */
+.container {
+  max-width: 600px;
+  margin-top: 50px;
+}
+
+input:invalid {
+  border-color: #f87171;
+}
+
+input:valid {
+  border-color: #34d399;
+}
